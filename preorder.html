@@ -59,7 +59,14 @@
     .form-msg--err { background: rgba(200,80,80,0.12); border: 1px solid rgba(200,80,80,0.4); color: #f0c9c9; }
     .deadline-note { text-align: center; color: var(--muted); margin-top: 26px; font-size: 0.95rem; }
     .deadline-note strong { color: var(--gold); }
-    @media (max-width: 720px) { .steps { grid-template-columns: 1fr; gap: 16px; } .claim { padding: 26px 20px; } }
+    .deadline-note a { color: var(--gold); }
+    .tiers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; max-width: 760px; margin: 0 auto; }
+    .tier { padding: 30px 28px; border-radius: 16px; background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.015)); border: 1px solid var(--line); }
+    .tier--feature { border-color: rgba(201,164,78,0.5); }
+    .tier__qty { display: inline-block; font-family: var(--sans); font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.72rem; color: var(--gold); background: var(--gold-soft); border: 1px solid rgba(201,164,78,0.35); padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; }
+    .tier h3 { font-family: var(--serif); font-size: 1.4rem; color: var(--cream); margin-bottom: 10px; }
+    .tier p { color: var(--muted); font-size: 1rem; }
+    @media (max-width: 720px) { .steps, .tiers { grid-template-columns: 1fr; gap: 16px; } .claim { padding: 26px 20px; } }
   </style>
 </head>
 <body>
@@ -135,6 +142,27 @@
       </div>
 
       <p class="deadline-note">Pre-order any time before release day — <strong>January 14, 2027</strong>. The live discussion date will be shared by email. Questions? <a href="mailto:auditingwithcourage@gmail.com" style="color:var(--gold);">auditingwithcourage@gmail.com</a></p>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--center">Ordering for your team?</p>
+        <h2 class="section__title">Bulk &amp; team orders</h2>
+        <p class="section__sub">Bringing <em>Auditing with Courage</em> to your firm, class, or organization? Larger orders unlock more — and every reader is still invited to the live discussion.</p>
+      </div>
+      <div class="tiers">
+        <div class="tier">
+          <div class="tier__qty">10+ copies</div>
+          <h3>Signed bookplates for everyone</h3>
+          <p>A signed, lantern-marked bookplate for every copy in your order — so each reader receives an autographed book.</p>
+        </div>
+        <div class="tier tier--feature">
+          <div class="tier__qty">25+ copies</div>
+          <h3>A private conversation, plus signed bookplates</h3>
+          <p>An intimate, private discussion with Christina for your team or group — plus a signed bookplate for every copy.</p>
+        </div>
+      </div>
+      <p class="deadline-note">Ordering in bulk? Email <a href="mailto:auditingwithcourage@gmail.com?subject=Bulk%20order%20%E2%80%94%20Auditing%20with%20Courage">auditingwithcourage@gmail.com</a> and we'll take care of the details. For large corporate orders, Porchlight Books specializes in bulk fulfillment.</p>
     </section>
 
     <section class="section" style="padding-top: 0;">
